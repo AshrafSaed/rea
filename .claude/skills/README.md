@@ -1,7 +1,15 @@
 # `rea` skill (Claude Code and Claude Desktop)
 
-A short entry-point skill for [REA](../../README.md). It asks what to investigate,
-loads the `reverse-engineer-anything` workflow and runs it with the REA tools.
+A short entry-point skill for [REA](../../README.md). **`/rea` is a shortcut that
+connects everything in one step:** it asks what to investigate, loads the
+`reverse-engineer-anything` workflow, checks that the REA tools are connected, and runs
+the investigation with them. You do not need to call each piece separately.
+
+| Piece | Role |
+| ----- | ---- |
+| REA MCP server (`npx rea-agents setup`) | The tools that do the analysis |
+| `reverse-engineer-anything` skill | The detailed investigation workflow |
+| `rea` skill (this folder) | The shortcut that ties the two together |
 
 Added in this fork by Ashraf Saed | MIGATRONIX. Not part of upstream `morluto/rea`.
 
